@@ -1,0 +1,47 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <header>
+      <nav>
+        <span
+          ><img
+            src="{% static 'images/download.png' %}"
+            alt=""
+            srcset=""
+            width="75px"
+            height=""
+        /></span>
+        <ul>
+          <a href="#" class="nav-link"><li>HOME</li></a>
+          <a href="products.html" class="nav-link"><li>PRODUCTS</li></a>
+          <a href="about us.html" class="nav-link"><li>ABOUT US</li></a>
+        </ul>
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-bar"
+            id="searchInput"
+            placeholder="Search..."
+          />
+          <button class="search-btn" type="submit">
+            <i class="ri-search-line"> </i>
+          </button>
+        </div>
+        <div class="login-signup">
+          <a href="login.html" class="button"
+            ><i class="ri-user-line"></i>Login</a
+          >
+          <a href="sign up.html" class="button"
+            ><i class="ri-logout-box-r-line"></i>Sign Up</a
+          >
+        </div>
+        <div class="cart">
+          <a href="cart.html" class="button"
+            ><i class="ri-shopping-cart-line"></i></a
+          >`
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
