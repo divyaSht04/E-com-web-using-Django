@@ -19,3 +19,6 @@ def headerPage(request):
 
 def aboutUsPage(request):
     return render(request,"about us.html")
+
+def productPage(request):
+    return render(request,"products.html")

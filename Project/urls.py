@@ -23,5 +23,6 @@ urlpatterns = [
     path("dothis/", views.doThis, name="doThis"),
     path("", views.openPage),
     path("headerPage/", views.headerPage),
-    path("aboutUs/", views.aboutUsPage , name= "aboutUs")
+    path("aboutUs/", views.aboutUsPage , name= "aboutUs"),
+    path("products/", views.productPage, name="products")
 ]
