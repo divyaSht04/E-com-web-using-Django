@@ -3,11 +3,9 @@
 
   }
 
-  body {
-    /* box-sizing: border-box; */
-    height: 100vh;
-    margin: 0;
-  /* margin-top: 150px; */
+  .body {
+  height: 100vh;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,6 +30,7 @@
     gap: 16px;
     text-align: center;
   }
+  
   ::placeholder{
     color: #000000;
     font-family: var(--font-family);

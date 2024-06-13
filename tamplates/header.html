@@ -1,6 +1,9 @@
 {% load static  %}
-<!DOCTYPE html>
+
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href = "/static/css/header.css" /> 
+  </head>
   <body>
     <header>
       <nav>
@@ -13,9 +16,9 @@
             height=""
         /></span>
         <ul>
-          <a href="#" class="nav-link"><li>HOME</li></a>
-          <a href="products.html" class="nav-link"><li>PRODUCTS</li></a>
-          <a href="about us.html" class="nav-link"><li>ABOUT US</li></a>
+          <a href="{% url 'home' %}" class="nav-link"><li>HOME</li></a>
+          <a href="{% url 'products' %}" class="nav-link"><li>PRODUCTS</li></a>
+          <a href="{% url 'aboutUs'  %}" class="nav-link"><li>ABOUT US</li></a>
         </ul>
         <div class="search-container">
           <input
@@ -29,10 +32,10 @@
           </button>
         </div>
         <div class="login-signup">
-          <a href="login.html" class="button"
+          <a href="{% url 'login'  %}" class="button"
             ><i class="ri-user-line"></i>Login</a
           >
-          <a href="sign up.html" class="button"
+          <a href="{% url 'signUp' %}" class="button"
             ><i class="ri-logout-box-r-line"></i>Sign Up</a
           >
         </div>

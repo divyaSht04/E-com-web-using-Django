@@ -21,8 +21,10 @@ from Project import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("dothis/", views.doThis, name="doThis"),
-    path("", views.openPage),
+    path("", views.openPage, name="home"),
     path("headerPage/", views.headerPage),
     path("aboutUs/", views.aboutUsPage , name= "aboutUs"),
-    path("products/", views.productPage, name="products")
+    path("products/", views.productPage, name="products"),
+    path("login/", views.login, name= "login"),
+    path("signUp/", views.signUp, name= "signUp")
 ]

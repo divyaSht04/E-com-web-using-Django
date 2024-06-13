@@ -22,3 +22,9 @@ def aboutUsPage(request):
 
 def productPage(request):
     return render(request,"products.html")
+
+def signUp(request):
+    return render(request,"signUp.html")
+
+def login(request):
+    return render(request,"login.html")

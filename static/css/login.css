@@ -3,12 +3,9 @@
 
   }
 
- 
- body {
-    /* box-sizing: border-box; */
-    height: 100vh;
-    margin: 0;
-  /* margin-top: 150px; */
+ .body {
+  height: 100vh;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +18,7 @@
 
 .form-container{
   position: relative;
-        /* mix-blend-mode: color-dodge; */
+    /* mix-blend-mode: color-dodge; */
         background-color: rgba(255, 255, 255, 0.461);
         border-radius: 1rem;
         font-family: var(--font-family);
