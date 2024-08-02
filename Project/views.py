@@ -1,5 +1,5 @@
-from django.http import HttpResponse
-from django.shortcuts import render
+from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import redirect, render
 
 PROJECT_NAME = 'Project'
 
@@ -27,4 +27,14 @@ def signUp(request):
     return render(request,"signUp.html")
 
 def login(request):
+    if request.method == "POST":
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        print(username)
+        print(password)
+        return HttpResponseRedirect("/products")
     return render(request,"login.html")
+
+def formData(request):
+    print("the data has been collected!")
+    return HttpResponse("the data has been collected")

@@ -1,120 +1,108 @@
-:root {
-    --font-family:"Poppins", sans-serif;
-
-  }
-
- .body {
-  height: 100vh;
+/* Reset some default browser styles */
+body, html {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(images/loginback.jpg) ;
- background-color:lightgray;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
- }
-
-.form-container{
-  position: relative;
-    /* mix-blend-mode: color-dodge; */
-        background-color: rgba(255, 255, 255, 0.461);
-        border-radius: 1rem;
-        font-family: var(--font-family);
-        bottom: 40px;
-
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
-  
-.form {
-    /* mix-blend-mode: color-dodge; */
-    /* background-color: #ffffff; */
-    display: block;
-    padding: 1rem;
-    max-width: 350px;
-    border-radius: 0.5rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(255, 255, 255, 0.05);
-    /* z-index: 100; */
-    font-family: var(--font-family);
-  }
-  ::placeholder {
-    color: rgb(0, 0, 0);
-    font-family: var(--font-family);
-  }
-  .form-title {
-    font-family: var(--font-family);
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    font-weight: 600;
-    text-align: center;
-    color: #000;
-  }
-  
-  .input-container {
-    position: relative;
-  }
-  
-  .input-container input, .form button {
-    outline: none;
-    border: 1px solid #e5e7eb;
-    margin: 8px 0;
-    font-family: var(--font-family);
-  }
-  
-  .input-container input {
-    background-color: #f7f7f7;
-    padding: 1rem;
-    padding-right: 2rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    width: 300px;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    font-family: var(--font-family);
-  }
-  
-  .input-container span {
-    display: grid;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    padding-left: 1rem;
-    padding-right: 1.5rem;
-    place-content: center;
-    font-family: var(--font-family);
-  }
-  
-  
-  
-  .submit {
-    display: block;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    background-color: #4F46E5;
-    color: #ffffff;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-    width: 100%;
-    border-radius: 0.5rem;
-    text-transform: uppercase;
-    font-family: var(--font-family);
-  }
-  
-  .signup-link {
-    color: #000000;
-    font-size: 1rem;
-    line-height: 1.25rem;
-    text-align: center;
-  }
-  
-  .signup-link a {
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: var(--font-family);
-    text-decoration: underline;
-  }
-  
+
+/* Full-page background image */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://source.unsplash.com/random');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+/* Centering the login container */
+.login-container {
+  margin: 150px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+/* Styling the form elements */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input {
+  margin-right: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling the sign-up link */
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-link p {
+  color: #333;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.signup-link a:hover {
+  color: #0056b3;
+}
