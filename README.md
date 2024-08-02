@@ -26,7 +26,7 @@ The Online Camera Store project is a full-featured web application designed to p
    - Generate sales reports and analytics.
 
 ## Technology Stack
-- **Frontend:** HTML, CSS, JavaScript, Bootstrap
+- **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Python, Django
 - **Database:** db.sqlite3
 - **Version Control:** Git and GitHub
