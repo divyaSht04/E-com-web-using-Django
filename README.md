@@ -32,9 +32,9 @@ The Online Camera Store project is a full-featured web application designed to p
 - **Version Control:** Git and GitHub
 
 ## Prerequisites
-**Python 3.8+**
-**Django version 3.2+**
+   -**Python 3.8+**
+   -**Django version 3.2+**
 
 1. **Clone the repository:**
-   ``` 
-   git clone https://github.com/
+   ``` bash
+   git clone https://github.com/divyaSht04/E-com-web-using-Django.git
